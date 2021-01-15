@@ -28,7 +28,7 @@ end
 
 platform :ios, '10.0'
 
-target 'PrimaryStructure' do
+target 'mytestapp' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
@@ -36,7 +36,7 @@ target 'PrimaryStructure' do
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
   pod 'RNLocalize', :path => '../node_modules/react-native-localize'
 
-  target 'PrimaryStructureTests' do
+  target 'mytestappTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -51,10 +51,10 @@ target 'PrimaryStructure' do
   end
 end
 
-target 'PrimaryStructure-tvOS' do
+target 'mytestapp-tvOS' do
   # Pods for RnDiffApp-tvOS
 
-  target 'PrimaryStructure-tvOSTests' do
+  target 'mytestapp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

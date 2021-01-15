@@ -1,4 +1,4 @@
-package com.primarystructure;
+package com.mytestapp;
 
 import android.app.Application;
 import android.content.Context;
